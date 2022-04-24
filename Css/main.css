@@ -161,6 +161,7 @@ h1 {
   border-radius: 25px;
   margin-left: 10px;
   position: absolute;
+  z-index: 1000;
   background-color: #081c15;
   width: 30%;
   height: 85vh;
