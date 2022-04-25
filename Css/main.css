@@ -167,6 +167,7 @@ h1 {
   height: 85vh;
   align-self: center;
   text-align: center;
+  overflow-y: scroll;
 }
 /* Search Box */
 .searchBox:hover > .searchInput {
@@ -215,6 +216,8 @@ h1 {
 
 footer {
   height: 50px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,6 +244,7 @@ footer {
   padding: 15px;
   border-radius: 25px;
   margin: 0 auto;
+  margin-bottom: 50px;
   text-align: start;
 }
 .loc {
@@ -298,6 +302,7 @@ footer {
 .Register-Workout {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 50px;
   text-align: left;
 }
 .workout-form {
@@ -313,6 +318,7 @@ footer {
 .workout-form textarea {
   border-radius: 6px;
   outline: 0;
+  width: 60%;
   font-size: 18px;
 }
 .Input input {
@@ -323,4 +329,18 @@ footer {
 }
 .hidden {
   display: none;
+}
+.decription {
+  display: flex;
+  align-items: center;
+}
+.decription-txt {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 7px;
+}
+.decription-logo {
+  width: 18px;
+  margin-left: 6px;
+  align-self: flex-end;
 }

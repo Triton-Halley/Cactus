@@ -9,7 +9,7 @@
       href="/Images/cactus-22094-32x32.ico"
       type="image/x-icon"
     />
-    <title>Document</title>
+    <title>Cactus</title>
     <link rel="stylesheet" href="Css/main.css" />
     <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
     <script defer src="/node_modules/leaflet/dist/leaflet.js"></script>
@@ -45,11 +45,17 @@
           <form class="workout-form">
             <div class="Input">
               <label for="Title">Title</label>
-              <input type="text" required />
+              <input class="title-input" type="text" required />
             </div>
             <div class="Input">
               <label for="Description">Description</label>
-              <textarea name="" id="" cols="30" rows="2" required></textarea>
+              <textarea
+                id="Description"
+                class="Description-txtarea"
+                cols="30"
+                rows="2"
+                required
+              ></textarea>
             </div>
             <button class="submit-Register-Workout" type="submit">
               Register Workout
