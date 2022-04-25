@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="Css/main.css" />
     <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
     <script defer src="/node_modules/leaflet/dist/leaflet.js"></script>
+    <script defer src="/js/Workout.js"></script>
+    <script defer src="/js/app.js"></script>
     <script defer src="/js/main.js"></script>
   </head>
+
   <body>
     <header class="main-header">
       <h1>Cactus</h1>
@@ -36,13 +39,22 @@
           <p class="logo-name">Cactus</p>
         </div>
         <!-- example -->
-        <div class="Workout">
-          <p>header</p>
-          <p>decription</p>
-          <div>
-            <p>Start Loction</p>
-            <p>End Loction</p>
-          </div>
+
+        <!-- Register Workout Form -->
+        <div class="Register-Workout hidden">
+          <form class="workout-form">
+            <div class="Input">
+              <label for="Title">Title</label>
+              <input type="text" required />
+            </div>
+            <div class="Input">
+              <label for="Description">Description</label>
+              <textarea name="" id="" cols="30" rows="2" required></textarea>
+            </div>
+            <button class="submit-Register-Workout" type="submit">
+              Register Workout
+            </button>
+          </form>
         </div>
       </section>
     </main>

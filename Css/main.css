@@ -243,3 +243,84 @@ footer {
   margin: 0 auto;
   text-align: start;
 }
+.loc {
+  display: flex;
+  justify-content: space-around;
+}
+.loc p {
+  padding: 25px 0 0 0;
+  font-weight: normal;
+}
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.title-section {
+  display: flex;
+  align-items: center;
+}
+.title-logo {
+  width: 18px;
+  align-self: flex-end;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+}
+.start p {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.end p {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.end {
+  display: flex;
+  align-items: center;
+}
+.startIcon {
+  width: 18px;
+  align-self: flex-end;
+}
+.endIcon {
+  width: 18px;
+  align-self: flex-end;
+}
+.Input {
+  padding: 10px;
+}
+.Input label {
+  display: block;
+}
+.Register-Workout {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+.workout-form {
+  background-color: #74c69d;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+.workout-form button {
+  padding: 5px;
+  margin: 10px;
+}
+.workout-form textarea {
+  border-radius: 6px;
+  outline: 0;
+  font-size: 18px;
+}
+.Input input {
+  border-radius: 6px;
+  padding: 5px;
+  width: 60%;
+  font-size: 18px;
+}
+.hidden {
+  display: none;
+}
