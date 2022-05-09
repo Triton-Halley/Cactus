@@ -57,6 +57,7 @@ class App {
       CurrentLoaction,
       destinationCoords
     );
+    displayLocation(CurrentLoaction[0], CurrentLoaction[1]);
   }
   AddMarker(coords) {
     //todo
@@ -162,3 +163,31 @@ btnWorkOutSubmit.addEventListener("click", function (e) {
 //   let geocoder;
 //   geocoder = new google.maps.Gepcoder();
 // };
+
+function displayLocation(latitude, longitude) {
+  var geocoder;
+  geocoder = new google.maps.Geocoder();
+  var latlng = new google.maps.LatLng(latitude, longitude);
+
+  geocoder.geocode({ latLng: latlng }, function (results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        var add = results[0].formatted_address;
+        var value = add.split(",");
+
+        count = value.length;
+        country = value[count - 1];
+        state = value[count - 2];
+        city = value[count - 3];
+        console.log(city);
+        // x.innerHTML = "city name is: " + city;
+      } else {
+        // x.innerHTML = "address not found";
+        console.log("address not found");
+      }
+    } else {
+      // x.innerHTML = "Geocoder failed due to: " + status;
+      console.log("Geocoder failed due to: " + status);
+    }
+  });
+}
