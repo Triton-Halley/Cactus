@@ -12,15 +12,8 @@
     <title>Cactus</title>
     <link rel="stylesheet" href="Css/main.css" />
     <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRwf-SevmLq8hllNFCjA2M0e2BOo5H1OM&callback=initMap"
-    ></script>
     <script defer src="/node_modules/leaflet/dist/leaflet.js"></script>
-    <script defer src="/js/Workout.js"></script>
-    <script defer src="/js/app.js"></script>
-    <script defer src="/js/main.js"></script>
+    <script defer type="module" src="/js/main.js"></script>
   </head>
 
   <body>
@@ -52,21 +45,12 @@
               <label for="Title">Title</label>
               <input class="title-input" type="text" required />
             </div>
-            <div class="Input">
-              <label for="Description">Description</label>
-              <textarea
-                id="Description"
-                class="Description-txtarea"
-                cols="30"
-                rows="2"
-                required
-              ></textarea>
-            </div>
-            <button class="submit-Register-Workout" type="submit">
-              Register Workout
-            </button>
+
+            <button class="submit-Register-Workout" type="submit">add</button>
           </form>
         </div>
+        <!-- end -->
+        <div class="WorkList"></div>
       </section>
     </main>
     <footer>
